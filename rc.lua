@@ -28,6 +28,9 @@ require("awful")
 require("awful.autofocus")
 require("awful.rules")
 
+-- Debian menu using ~/.menu-methods (symlink from awesome config dir)
+-- require("menu")
+
 -- Theme handling library
 require("beautiful")
 
@@ -54,6 +57,8 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 local commands = {
+
+    filez           = "nautilus",
 	terminal        = "gnome-terminal",
 	editor          = "gvim",
 	browser_chrome  = "google-chrome",
